@@ -6,17 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { PlannerComponent } from './planner/planner.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TraderComponent } from './trader/trader.component';
+import { AgGridModule } from 'ag-grid-angular';
+import { HttpClientModule } from '@angular/common/http';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlannerComponent,
     DashboardComponent,
-    TraderComponent
+    TraderComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]
