@@ -9,6 +9,7 @@ import { TraderComponent } from './trader/trader.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { MessagesComponent } from './messages/messages.component';
+import { DxDataGridModule } from "devextreme-angular";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MessagesComponent } from './messages/messages.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    DxDataGridModule,
     AgGridModule.withComponents([])
   ],
   providers: [],

@@ -1,0 +1,8 @@
+::ng-deep #gridContainer {
+    height: 500px
+}
+
+.dx-datagrid-headers
+{
+    background-color: yellow;
+}

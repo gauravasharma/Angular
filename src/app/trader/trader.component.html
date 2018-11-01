@@ -1,3 +1,21 @@
-<p>
-  trader works!
-</p>
+<span>All Elements</span> 
+<div>
+<dx-data-grid 
+    id="gridContainer"
+    [showColumnLines]="true"
+    [showRowLines]="true"
+    [showBorders]="true"
+    [rowAlternationEnabled]="true"
+    [dataSource]="myItems"
+    [columns]="columns"
+    [showBorders]="true"
+    (onContentReady)="onContentReady($event)">
+    <dxo-load-panel [enabled]="true"></dxo-load-panel>
+    <dxo-scrolling mode="virtual"></dxo-scrolling>
+    <dxo-sorting mode="none"></dxo-sorting>
+    <dxo-paging [enabled]="false"></dxo-paging>
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+    <dxo-export [enabled]="true" fileName="Employees" [allowExportSelectedData]="true"></dxo-export>
+    </dx-data-grid>
+</div>
+
